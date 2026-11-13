@@ -1,0 +1,9 @@
+version: 2
+updates:
+  # Security updates only: a pull request opens for a vulnerable dependency, and the limit of 0
+  # silences routine version updates.
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 0
